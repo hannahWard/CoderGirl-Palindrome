@@ -16,24 +16,23 @@ namespace Palindrome
 
             Console.WriteLine(CheckPalindrome(reverseUserInput, userInput));
             Console.ReadLine();
+
         }
 
         // TODO: Create a method that recognizes palindromes.
 
-        public static string CheckPalindrome(string reverseUserInput, string userInput)
+        public static bool CheckPalindrome(string reverseUserInput, string userInput)
         {
-
-            string message = "";
 
             if (reverseUserInput.Equals(userInput))
             {
-                message = "true";
+                return true;
             }
             else
             {
-                message = "false";
+                return false;
             }
-            return message;
+            
 
         }
     }
